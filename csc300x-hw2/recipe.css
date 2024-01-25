@@ -1,0 +1,110 @@
+body {
+    background-image: url(silverware.jpg);
+    color: #404040;
+}
+
+#main-header {
+    color: #A4A400;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    font-size: 22pt;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    background-color: #F0F0F0;
+}
+
+.cookingtime {
+    text-align: left;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+}
+
+#ingredients {
+    color: #A4A400;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+    background-color: #F0F0F0;
+}
+
+.cookingingredients {
+    text-align: left;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+}
+
+#directions {
+    color: #A4A400;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+    background-color: #F0F0F0;
+}
+
+.cookingdirections {
+    text-align: left;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+}
+
+#user-comments {
+    color: #A4A400;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+    background-color: #F0F0F0;
+}
+
+.review-1 {
+    text-align: left;
+    font-style: italic;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+    background: #FFFFA8;
+
+}
+
+.review-2 {
+    text-align: left;
+    font-style: italic;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+    background: #FFFFA8;
+}
+
+.review-3 {
+    text-align: left;
+    font-style: italic;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+    background: #FFFFA8;
+}
+
+#links {
+    color: #A4A400;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+    background-color: #F0F0F0;
+}
+
+.links-section {
+    text-align: left;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+    text-decoration: underline;
+}
