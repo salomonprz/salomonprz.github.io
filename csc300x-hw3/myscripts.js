@@ -15,8 +15,7 @@ function updateMealPlanDisplay() {
         const div = document.createElement('div');
         div.className = 'meal-plan-item';
         div.innerHTML = `${item.dish} - $${item.cost} x ${item.quantity}
-        <button onclick="removeFromMealPlan(${index})">Remove</button>
-        <button onclick="addAnotherOrder(${index})">Add Another Order</button>`;
+        <button onclick="removeFromMealPlan(${index})">Remove</button>       `;
         mealPlanItemsElement.appendChild(div);
 
         totalAmount += item.cost * item.quantity;

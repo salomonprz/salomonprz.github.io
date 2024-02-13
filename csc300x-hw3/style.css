@@ -20,6 +20,7 @@ hr {
 }
 
 article {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     max-width: 680px;
     margin: 20px auto; /* Adds margin to the top and bottom while centering the article */
     border: 1px solid #ccc; /* Light grey border */
