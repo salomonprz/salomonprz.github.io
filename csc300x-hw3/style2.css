@@ -1,0 +1,44 @@
+body {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.recommendations, .meal-plan {
+    flex: 1;
+    margin: 10px;
+}
+
+.dish {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.meal-plan-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-left: 5px;
+}

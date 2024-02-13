@@ -4,7 +4,7 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     font-family: Brush Script MT, Brush Script Std, cursive;
     font-size: 60px;
     font-weight: bold;
@@ -20,24 +20,40 @@ hr {
 }
 
 article {
-    max-width: 680px; /* or any max-width or width you prefer */
-    margin: auto; /* This centers the article */
+    max-width: 680px;
+    margin: 20px auto; /* Adds margin to the top and bottom while centering the article */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensures the content respects the border-radius */
+    padding: 20px; /* Space between the content and the border */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
+    background-color: #fff; /* Sets background color to white */
 }
+
 section {
-    display: flex;    
-    text-align: left; /* This keeps the text aligned to the left */
+    display: flex;
+    justify-content: center;
+    text-align: left;
 }
+
 section > * {
-    flex: 0 1 auto; /* This ensures the content within section doesn't stretch */
+    flex: 0 1 auto;
+}
+
+img {
+    max-width: 100%; /* Ensures images do not exceed the width of the article */
+    height: auto; /* Maintains the aspect ratio of the images */
+    display: block; /* Removes any extra space below the image */
 }
 
 .button-container {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 100px; /* Use the full height of the viewport */
-  }
-  .meal-plan-button {
+    height: 100px;
+}
+
+.meal-plan-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
@@ -45,10 +61,10 @@ section > * {
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
-    /* Text centering is already the default for text inside a button */
-    text-align: center; /* Explicitly centering text, usually not necessary */
-  }
-  /* Add :hover effect for better user experience */
-  .meal-plan-button:hover {
+    text-align: center;
+}
+
+/* Add :hover effect for better user experience */
+.meal-plan-button:hover {
     background-color: #0056b3;
-  }
+}
