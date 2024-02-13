@@ -1,0 +1,54 @@
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+article {
+    max-width: 680px; /* or any max-width or width you prefer */
+    margin: auto; /* This centers the article */
+}
+section {
+    display: flex;    
+    text-align: left; /* This keeps the text aligned to the left */
+}
+section > * {
+    flex: 0 1 auto; /* This ensures the content within section doesn't stretch */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100px; /* Use the full height of the viewport */
+  }
+  .meal-plan-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Text centering is already the default for text inside a button */
+    text-align: center; /* Explicitly centering text, usually not necessary */
+  }
+  /* Add :hover effect for better user experience */
+  .meal-plan-button:hover {
+    background-color: #0056b3;
+  }

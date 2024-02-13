@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meal Plan</title>
+<style>
+  body {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .recommendations, .meal-plan {
+    flex: 1;
+    margin: 10px;
+  }
+  .dish {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .meal-plan-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  button {
+    margin-left: 5px;
+  }
+</style>
+</head>
+<body>
+<div class="recommendations">
+  <h2>Recommended Dishes</h2>
+  <div class="dish" onclick="addToMealPlan('Steak Special Sub', 12)">Steak Special Sub - $12</div>
+  <div class="dish" onclick="addToMealPlan('Baked Ziti Pizza', 15)">Baked Ziti Pizza - $15</div>
+  <div class="dish" onclick="addToMealPlan('Chicken Al Pesto Pizza', 17)">Chicken Al Pesto Pizza - $17</div>
+</div>
+<div class="meal-plan">
+  <h2>Your Meal Plan</h2>
+  <div id="mealPlanItems"></div>
+  <div>Total: $<span id="totalAmount">0</span></div>
+</div>
+<script>
+  let mealPlan = [];
+  let totalAmount = 0;
+
+  function addToMealPlan(dish, cost) {
+    mealPlan.push({ dish, cost, quantity: 1 });
+    updateMealPlanDisplay();
+  }
+
+  function updateMealPlanDisplay() {
+    const mealPlanItemsElement = document.getElementById('mealPlanItems');
+    mealPlanItemsElement.innerHTML = '';
+    totalAmount = 0;
+
+    mealPlan.forEach((item, index) => {
+      const div = document.createElement('div');
+      div.className = 'meal-plan-item';
+      div.innerHTML = `${item.dish} - $${item.cost} x ${item.quantity}
+        <button onclick="removeFromMealPlan(${index})">Remove</button>
+        <button onclick="addAnotherOrder(${index})">Add Another Order</button>`;
+      mealPlanItemsElement.appendChild(div);
+
+      totalAmount += item.cost * item.quantity;
+    });
+
+    document.getElementById('totalAmount').textContent = totalAmount.toFixed(2);
+  }
+
+  function removeFromMealPlan(index) {
+    mealPlan.splice(index, 1);
+    updateMealPlanDisplay();
+  }
+
+  function addAnotherOrder(index) {
+    mealPlan[index].quantity += 1;
+    updateMealPlanDisplay();
+  }
+</script>
+</body>
+</html>
