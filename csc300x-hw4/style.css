@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+#player-throw img,
+#computer-throw img {
+    width: 100px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.throw-option {
+    border: 3px solid transparent;
+}
+
+.throw-option.selected {
+    border-color: blue;
+}
